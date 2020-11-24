@@ -1,7 +1,5 @@
 # Image scripting language.
 
-*You may know **what** you want, you may know **how** you want it, but if you dont know **when** or **where**, you will never do it.*
-
 A small scripting language for automatization of GUI made in Java. You can automate almost anything with this tool, as long as you know what to look for.
 
 This scripting language was designed to be simple enough to be learned in just a few minutes, and still giving the user a complete toolbox to create whatever they need. Just remember: keep it simple, this is still a protoype.
@@ -13,7 +11,7 @@ Key features:
 - Performant
 
 ## Usage
-`java -jar lis.jar [-compile, -execute, -execute_compiled] [InputFile] [OutputFile]`
+`java -jar isl.jar [-compile, -execute, -execute_compiled] [InputFile] [OutputFile]`
 
 The jar can run the scripts either from a compiled file (with al image resources written to it) or from a plain script file. There only advantage of compiling a script is that all the images are encoded within it, and so the script becomes portable in one single file.
 ## Quick guide
@@ -76,3 +74,33 @@ As an example from the script above, each time the `click(imgbtn);` makes a scre
 TLDR: A ***reif*** is a simple concept: The script will return to the point where the reif is located (and continue execution from there again) if the condition of the reif is true. The reif condition will be tested each time an instruction (with or without deadlock) that is inside the reif body makes a screenshot and the condition of the instruction fails.
 
 A reif can only have two conditions: ***contains(resouce)*** and ***not_contains(resource)***. Deadlocks have no effects when written on reif conditions.
+
+## Pratical example
+In this example we will create a script that will auto-select our character in the videogame Valorant.
+
+Lets go!
+
+1. We first have to open notepad to start writting our script.
+
+```python
+@sova = "C:\Users\User\Desktop\sova.png"
+click(sova);
+click_offset(0, -150)
+```
+Wait, is that it? 
+
+Yes, it is very simple to automate things with this tool. In just 3 lines of code we automated our character selection!
+
+- The first line loads the sova character image (which I recorted from a screenshot of the selection menu and saved it to a file in under 1 minute, using Paint!) and assigns it to the resource "sova".
+
+- The second line is a *click* with *deadlock*, which means the program will wait for the image of the resource "sova" to appear on screen, immediatly clicking on it.
+
+- The third line will click the "lock" button, which we know is 150 pixels above the sova image (as easily saw on Paint on the coordiantes bellow, making a easy substraction).
+
+2. Once we are done writting the script, we save it to a file. I saved it to `myscript.txt` on my Desktop.
+
+3. Finally, we execute our script with the following command on cmd: `java -jar isl.jar -execute myscript.txt`
+
+And we can now open the game and test it out. We will see that just as the character select screen appears, our script will instantly click and lock on it!
+
+There is a lot more this scripting language can do! This is only an example to show how easy and fast you can automate any GUI!
