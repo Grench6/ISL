@@ -8,7 +8,7 @@
 
 A small scripting language for automatization of GUI made in Java. You can automate almost anything with this tool, as long as you know what to look for.
 
-This scripting language was designed to be simple enough to be learned in just a few minutes, and still giving the user a complete toolbox to create whatever they need. Just remember: keep it simple, this is still a protoype.
+This scripting language was designed to be simple enough to be learned in just a few minutes, and still giving the user a complete toolbox to create whatever they need. Just remember: keep it simple, this is still a protoype. The full list of commands can be found [here](https://github.com/Grench6/ISL/blob/main/DOC.md).
 
 Key features:
 
