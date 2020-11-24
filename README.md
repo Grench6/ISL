@@ -1,7 +1,10 @@
 # Image scripting language.
+## Content
+1. Introduction
+1. Quick guide
+1. Pratical example
 
-1. [Quick guide](https://github.com/Grench6/ISL#quick-guide)
-1. [Pratical example](https://github.com/Grench6/ISL#pratical-example)
+## Introduction
 
 A small scripting language for automatization of GUI made in Java. You can automate almost anything with this tool, as long as you know what to look for.
 
