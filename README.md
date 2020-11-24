@@ -30,9 +30,9 @@ The second line makes use of the **function** ***click_coordinate(x, y)*** to cl
 @imgbtn = "C:\Users\User\Imagenes\imgbtn.png"
 click(imgbtn)
 ```
-The special char ***@*** is used to declare a **resouce**, which are variables that can hold images. In order to load an image you must choose a resouce identifier and specify a full path to where the image is located. **Resources must be declared at the very begining of the script and before anything else**, otherwise the compiler will throw an exception.
+The special char ***@*** is used to declare a **resouce**, which are variables that can hold images. In order to load an image you must choose a resouce identifier and specify a full path to where the image is located. **Resources must be declared at the very begining of the script, before anything else**, otherwise the compiler will throw an exception.
 
-The function ***click(resource)*** will take a screenshot, and the search on it for the resource specified which is, in this case, the image of a button of a program. Once the program finds its position, it will be clicked. If the resource was not present in the screenshot, the program will not click anything and the execution of the script will continue to the nex line.
+The function ***click(resource)*** will take a screenshot, and then search on it for the resource specified (which is, in this case, imgbtn). Once the program finds its position, those coordinates will be clicked. If the resource was not present in the screenshot, the program will not click anything and the execution of the script will continue to the nex line.
 
 ---
 ```Python
@@ -41,9 +41,7 @@ click(imgbtn);
 ```
 This is the same script as the one shown before, except for one thing: the special semicolon char ( ***;*** ) at the end of the click function. The semicolon represents a **deadlock**, which means **the execution of the code will not proceed until the condition of the function is met**. In the case of this script, the code will not proceed until the imgbtn can be found on the screen by the program, and once it is found the program will click it and exit the deadlock (continuing the execution of the script as normally).
 
-When the deadlock is found the program will enter an infinite loop, taking multiple instrucions at certain rate (which will be explained in the next example) searching for the resouce. This simple concept can be very useful when you want the script to wait for a certain picture to appear on screen.
-
-Note: Deadlocks can only be used with the following functions: ***contains(resouce); not_contains(resource); click(resouce);***
+When a deadlock is found the program will enter an infinite loop, taking multiple screenshots at certain rate (which will be explained in the next example) searching for the resource. This simple concept can be very useful when you want the script to wait for a certain picture to appear on screen.
 
 ---
 ```Python
@@ -51,11 +49,11 @@ Note: Deadlocks can only be used with the following functions: ***contains(resou
 rate = 1000
 contains(imgbtn);
 ```
-There are 2 new things on this script: the ***contains(resouce)*** function, and the ***rate*** **directive**.
+There are 2 new things on this script: the ***contains(resource)*** function, and the ***rate*** **directive**.
 
-The contains function will simply look for the image resource on screen, without clicking if found. It can be useful if used along with a deadlock, and so you can block the execution of your script until there is *something* (the resource) on the screen, and then resume the execution without making any interaction with the found object.
+The contains function will simply look for the image resource on screen (without clicking it). It can be useful if used along with a deadlock, so you can block the execution of your script until there is *something* (a resource) on the screen, and then resume the execution without making any interaction with the found object.
 
-The rate directive will tell the program to change *the rate at which screenshots are taken when on a deadlock* and its meassured in milliseconds. The value of 1000 means the program will take screenshots every 1 second from there on, but there can be another rate directive changing the speed later on the script. This can be used to enter somewhat like an *idle state*, where you know you dont need precision and high speed detection of images.
+The rate directive will tell the program to change *the rate at which screenshots are taken when on a deadlock* meassured in milliseconds. The value of 1000 means the program will take screenshots every 1 second from there on, but there can be another rate directive changing the speed later on the script. This can be used to enter something like an *idle state*, where you know you dont need precision and high speed detection of images.
 
 ---
 ```Python
