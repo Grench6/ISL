@@ -1,4 +1,4 @@
-# Lock until condition met, image scripting language.
+# Image scripting language.
 
 *You may know **what** you want, you may know **how** you want it, but if you dont know **when** or **where**, you will never do it.*
 
