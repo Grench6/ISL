@@ -101,6 +101,6 @@ Yes, it is very simple to automate things with this tool. In just 3 lines of cod
 
 3. Finally, we execute our script with the following command on cmd: `java -jar isl.jar -execute myscript.txt`
 
-And we can now open the game and test it out. We will see that just as the character select screen appears, our script will instantly click and lock on it!
+And we can now open the game and test it out. We will see that just as the character select screen appears, our script will instantly click and lock on it. There are still some upgrades we can make to this script, check [this file](https://github.com/Grench6/ISL/blob/main/EXAMPLE.md) to see a more complete version of this script.
 
-There is a lot more this scripting language can do! This is only an example to show how easy and fast you can automate any GUI!
+**There is a lot more this scripting language can do! This is only an example to show how easy and fast you can automate any GUI!**
