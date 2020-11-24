@@ -1,4 +1,4 @@
-# Image scripting language.
+# Image scripting language
 ## Content
 1. Introduction
 1. Quick guide
