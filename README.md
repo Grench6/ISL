@@ -1,5 +1,8 @@
 # Image scripting language.
 
+1. [Quick guide](https://github.com/Grench6/ISL#quick-guide)
+1. [Pratical example](https://github.com/Grench6/ISL#pratical-example)
+
 A small scripting language for automatization of GUI made in Java. You can automate almost anything with this tool, as long as you know what to look for.
 
 This scripting language was designed to be simple enough to be learned in just a few minutes, and still giving the user a complete toolbox to create whatever they need. Just remember: keep it simple, this is still a protoype.
@@ -10,10 +13,6 @@ Key features:
 - Fast to implement
 - Performant
 
-## Usage
-`java -jar isl.jar [-compile, -execute, -execute_compiled] [InputFile] [OutputFile]`
-
-The jar can run the scripts either from a compiled file (with al image resources written to it) or from a plain script file. There only advantage of compiling a script is that all the images are encoded within it, and so the script becomes portable in one single file.
 ## Quick guide
 ```Python
 #This is a comment
