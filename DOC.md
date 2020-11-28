@@ -1,10 +1,10 @@
 # Special chars
 
-**@** Resource declaration.
+- **@** Resource declaration.
 
-**#** Line comment.
+- **#** Line comment.
 
-**;** Deadlock.
+- **;** Deadlock.
 
 ---
 # Functions
